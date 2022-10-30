@@ -1,6 +1,6 @@
-import { use } from 'react'
 import { getClient } from '../lib/sanity-server'
 import { postQuery } from '../lib/queries'
+
 export type Post = {
   _id: string
   slug: string
@@ -16,8 +16,8 @@ const getData = async (preview = false) => {
   return post
 }
 
-export default function Home() {
-  const post: Post = use(getData(false))
+export default async function Home() {
+  const post: Post = await getData()
   return (
     <div className="px-5 py-10">
       <div className="text-4xl mb-3">{post.title}</div>
