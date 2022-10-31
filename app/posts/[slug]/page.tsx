@@ -25,7 +25,7 @@ const getPost = async (slug: string, preview = false) => {
 export default async function PostPage({ params }: any) {
   const { slug } = params
   const post: Post = await getPost(slug)
-  console.log(post.content)
+
   return (
     <div>
       <h1>{post.title}</h1>

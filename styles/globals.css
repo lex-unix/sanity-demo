@@ -10,7 +10,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-code[class*='language-'],
 pre[class*='language-'] {
   overflow-x: scroll;
   width: 100%;
