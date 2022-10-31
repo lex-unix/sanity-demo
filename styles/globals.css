@@ -9,3 +9,30 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 800px;
+  background-color: #1b1e28 !important;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.token.keyword {
+  color: #add7ff;
+}
+
+.token.string {
+  color: #5de4c7;
+}
+
+.token.punctuation {
+  color: #f087bd;
+}
+
+h1[id] {
+  font-size: 32px;
+}
