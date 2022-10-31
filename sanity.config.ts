@@ -31,7 +31,7 @@ export default createConfig({
           {
             name: 'content',
             title: 'Content',
-            type: 'string'
+            type: 'markdown'
           },
           {
             name: 'date',
