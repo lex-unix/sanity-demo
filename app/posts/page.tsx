@@ -17,7 +17,6 @@ export default async function PostsPage() {
         <div key={post._id}>
           <Link href={`/posts/${post.slug}`}>
             <h1 className="text-2xl">{post.title}</h1>
-            <p className="mb-10">{post.content}</p>
           </Link>
         </div>
       ))}
