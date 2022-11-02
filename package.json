@@ -10,7 +10,7 @@
     "studio": "sanity start"
   },
   "dependencies": {
-    "next": "13.0.0",
+    "next": "13.0.1",
     "next-mdx-remote": "^4.1.0",
     "next-sanity": "^1.0.3",
     "react": "18.2.0",
