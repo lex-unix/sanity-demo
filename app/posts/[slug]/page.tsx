@@ -27,7 +27,7 @@ export default async function PostPage({ params }: any) {
   const post: Post = await getPost(slug)
 
   return (
-    <div>
+    <div className="post">
       <h1>{post.title}</h1>
       <PostItem {...post.content} />
     </div>

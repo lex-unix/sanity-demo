@@ -15,7 +15,7 @@ pre[class*='language-'] {
   width: 100%;
   max-width: 800px;
   background-color: #1b1e28 !important;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   padding: 8px;
   border-radius: 4px;
 }
@@ -32,6 +32,15 @@ pre[class*='language-'] {
   color: #f087bd;
 }
 
-h1[id] {
+.token.function {
+  color: #89ddff;
+}
+
+.post > h1 {
   font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.post > p {
+  margin-bottom: 16px;
 }
