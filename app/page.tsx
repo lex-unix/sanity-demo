@@ -4,7 +4,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col justify-center">
       <h1 className="text-4xl text-center">
-        Welcome to Next.js 13 and Sanity demo
+        Welcome to Next.js 13 and Sanity v3 demo
       </h1>
       <button className="mt-6 md:mt-10">
         <Link
