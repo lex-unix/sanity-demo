@@ -2,6 +2,7 @@
 
 .env
 .sanity
+dist
 
 # dependencies
 /node_modules
