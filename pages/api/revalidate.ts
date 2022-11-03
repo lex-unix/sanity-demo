@@ -24,9 +24,6 @@ export default async function handler(
   console.log('Revalidating...')
   const signature = req.headers[SIGNATURE_HEADER_NAME] as string
   const body = await readBody(req) // Read the body into a string
-  console.log('body', body)
-  console.log('signature', signature)
-  console.log('env', process.env.SANITY_STUDIO_REVALIDATE_SECRET)
   if (
     !isValidSignature(
       body,
