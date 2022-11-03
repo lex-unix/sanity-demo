@@ -20,6 +20,17 @@ pre[class*='language-'] {
   border-radius: 4px;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .token.keyword {
   color: #add7ff;
 }
