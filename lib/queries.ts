@@ -2,8 +2,7 @@ const postFields = `
   _id,
   title,
   date,
-  excerpt,
-  coverImage,
+  img,
   "slug": slug.current,
 `
 

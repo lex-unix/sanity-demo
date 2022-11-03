@@ -6,4 +6,5 @@ export type Post = {
   content: MDXRemoteSerializeResult
   title: string
   date: string
+  img: string
 }

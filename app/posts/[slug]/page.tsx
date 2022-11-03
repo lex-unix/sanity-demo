@@ -3,6 +3,8 @@ import { postQuery, postSlugsQuery } from '@/lib/queries'
 import type { Post } from '@/lib/types'
 import { mdxToHtml } from '@/lib/mdx'
 import PostItem from './mdx-remote-wrapper'
+import Image from 'next/image'
+import { urlForImage } from '@/lib/sanity'
 
 export const generateStaticParams = async () => {
   const paths: string[] = await sanityClient.fetch(postSlugsQuery)
@@ -29,6 +31,15 @@ export default async function PostPage({ params }: any) {
   return (
     <div className="post">
       <h1>{post.title}</h1>
+      {post.img && (
+        <Image
+          src={urlForImage(post.img).url()}
+          alt={post.title}
+          width={700}
+          height={350}
+          className="mb-5 mx-auto"
+        />
+      )}
       <PostItem {...post.content} />
     </div>
   )

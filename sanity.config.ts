@@ -37,6 +37,11 @@ export default createConfig({
             name: 'date',
             title: 'Date',
             type: 'datetime'
+          },
+          {
+            name: 'img',
+            title: 'Image',
+            type: 'image'
           }
         ]
       }
